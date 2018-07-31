@@ -23,7 +23,8 @@ const processAuthResult = (authResult, needsEmailVerified = false) => {
     } else {
         putOnSession(IS_LOGGED_USER_KEY, true);
         //redirect to home
-        window.location = '/';
+        //window.location = '/';
+        window.location = 'post.html'
     }
 }
 
@@ -98,4 +99,4 @@ $('#form-login').submit(login = (e) => {
 
     }
     clearContent([getID('mail-access'), getID('password-access')]);
-});
+})
