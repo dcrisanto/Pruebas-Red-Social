@@ -58,7 +58,7 @@ const logout = (redirect = true) => {
             putOnSession(IS_LOGGED_USER_KEY, false);
             if (redirect) {
                 //redirect to home
-                window.location = '/src/login.html';
+                window.location = '/src';
             }
 
         })
