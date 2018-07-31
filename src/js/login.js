@@ -59,7 +59,7 @@ const getAuthProvider = (socialNetwork) => {
 const authWithOAuth = (socialNetwork) => {
     let authProvider = getAuthProvider(socialNetwork);
     authProvider.setCustomParameters({
-        'display': 'popup'
+        //'display': 'popup'
     });
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
         .then(function () {

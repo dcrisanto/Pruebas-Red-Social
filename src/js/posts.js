@@ -314,7 +314,6 @@ $('#add-form-post').submit((e) => {
         let post = getPost();
         post = addNewPost(post);
     } catch (error) {
-        console.log(error);
         alert(error.message);
     }
 
